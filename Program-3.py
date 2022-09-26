@@ -23,3 +23,4 @@ while len(lst) < n:
         lst.append(num)
     num = num + 1
 print(lst)
+ 
