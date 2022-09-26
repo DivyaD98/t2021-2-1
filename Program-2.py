@@ -19,4 +19,4 @@ while len(lst) < a:
     if (num % 2 != 0):
         lst.append(num)
     num = num + 1
-print(lst) 
+print(lst)
