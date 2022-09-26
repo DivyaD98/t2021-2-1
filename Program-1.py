@@ -20,5 +20,5 @@ elif type_of_operation == "/":
     if b != 0:
         print(a, '/', b, '=', a / b)
     else:
-        print("Invalid input")
+        print("Invalid input") 
 
