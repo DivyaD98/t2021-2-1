@@ -12,11 +12,9 @@
 
 # Code
 
-a = int(input("enter a number"))
-lst = []
+a = int(input('Enter a number'))
 i = 1
-while len(lst) < a:
-    if (i % 2 != 0):
-        lst.append(i)
-    i += 1
-print(lst)
+while a > 0:
+    print(i, end=" ")
+    i = i + 2
+    a = a - 1
