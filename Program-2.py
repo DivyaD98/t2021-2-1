@@ -14,9 +14,9 @@
 
 a = int(input("enter a number"))
 lst = []
-num = 1
+i = 1
 while len(lst) < a:
-    if (num % 2 != 0):
-        lst.append(num)
-    num += 1
+    if (i % 2 != 0):
+        lst.append(i)
+    i += 1
 print(lst)
