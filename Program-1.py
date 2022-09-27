@@ -21,4 +21,3 @@ elif type_of_operation == "/":
         print(a, '/', b, '=', a / b)
     else:
         print("Invalid input") 
-
