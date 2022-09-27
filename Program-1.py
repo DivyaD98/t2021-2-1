@@ -6,18 +6,30 @@ Create a small calculator which performs operations such as Addition, Subtractio
 
 #Calculator
 
-a = float(input("Enter 1st number :"))
-b = float(input("Enter 2nd number :"))
-type_of_operation = str(input("Enter type of operation : +--> Add, \'-\'--> Subtract, *--> Multiply, /--> Divide "))
+class Calculator:
+    def __init__(self, a, b, type_of_operation):
 
-if type_of_operation == "+":
-    print(a, '+', b, '=', a + b)
-elif type_of_operation == "-":
-    print(a, '-', b, '=', a - b)
-elif type_of_operation == "*":
-    print(a, '*', b, '=', a * b)
-elif type_of_operation == "/":
-    if b != 0:
-        print(a, '/', b, '=', a / b)
-    else:
-        print("Invalid input") 
+        self.int_1 = a
+        self.int_2 = b
+        self.type_of_operation = type_of_operation
+
+        if (type_of_operation == '+'):
+            print(a, '+', b, '=', a + b)
+
+        if (type_of_operation == '-'):
+            print(a, '-', b, '=', a - b)
+
+        if (type_of_operation == '*'):
+            print(a, '*', b, '=', a * b)
+
+        if (type_of_operation == '/'):
+            if b != 0:
+                print(a, '/', b, '=', a / b)
+            else:
+                print("Anything cannot be divided by Zero")
+
+
+a = float(input('Enter first number: '))
+b = float(input('Enter second number: '))
+type_of_operation = str(input('Enter a type of operation: +--> Add, \'-\'--> Subtract, *--> Multiply, /--> Divide'))
+p1 = Calculator(a, b, type_of_operation) 
